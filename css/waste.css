@@ -1,0 +1,322 @@
+body {
+    justify-content: center;
+    align-items: center;
+    background-color: #9dd2ec;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+
+/*Top Bar Start*/
+
+
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    background: #dff7eb;
+    padding: 10px 50px;
+    font-size: 14px;
+    color: #555;
+
+}
+.social-icons{
+    color: #555;
+}
+.social-icons a, .contact-info a {
+    margin-right: 10px;
+    color: #555;
+    text-decoration: none;
+}
+.social-icons a:hover, .contact-info a:hover {
+    color: #007bff;
+}
+
+
+/*Top Bar End*/
+
+
+/*Nav Bar Start*/
+
+
+.navbar {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 50px;
+    background: white;
+    box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.9);
+}
+.navbar ul ul li{
+    background-color: #7c4444;
+    
+}
+.nav-links li:hover .dropdown {
+    display: contents;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 22px;
+    font-weight: bold;
+}
+.logo img {
+    width: 50px;
+    margin-right: 10px;
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+.nav-links li {
+    position: relative;
+    padding: 10px 20px;
+    background: #dff7eb;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+
+}
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    font-weight: bold;
+}
+.dropdown {
+    display: none;
+    position: absolute;
+    background: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    padding: 5px;
+    min-width: 150px;
+}
+.nav-links li:hover{
+    background: #494949;
+    box-shadow: 0px 0px 15px 2px gray;
+}
+.nav-links li:hover a{
+    color: #fff;
+}
+
+.dropdown li {
+    padding: 5px 0;
+}
+.appointment-btn {
+    background: #dff7eb;
+    color: #494949;
+    padding: 15px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+}
+.appointment-btn:hover{
+    background: #494949;
+    color: #fff;
+    box-shadow: 0px 0px 15px 2px gray;
+}
+
+
+/*Nav Bar End*/
+
+
+
+/* Time Wasting Section Styles */
+#time-wasting {
+    background: linear-gradient(85deg, #21ff42, #ff1a1a);
+    color: #ecf0f1;
+    padding: 60px 0;
+    font-family: 'Roboto', sans-serif;
+    box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+#time-wasting h2 {
+    font-size: 42px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #f39c12;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+#time-wasting p {
+    font-size: 20px;
+    margin-bottom: 40px;
+    text-align: center;
+    color: #ffffff;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7)
+}
+
+/* Background Image for Time-Wasting List */
+.time-wasting-list {
+    background: url('https://scontent.fspd3-1.fna.fbcdn.net/v/t39.30808-6/481777009_122115755396770999_6298311507717381891_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=127cfc&_nc_ohc=fCtRAGjR6PoQ7kNvgEq-6J3&_nc_oc=AdhUpe9hE3oQE0aoylk_0DuifSDKuO6CtmAulc7f8AMeS_jQkY7qP4I76X_JHz4JvpY&_nc_zt=23&_nc_ht=scontent.fspd3-1.fna&_nc_gid=A8gmS0_3Rg-Pe2nt73bC4nf&oh=00_AYHYoP8sBqLcObUoI6bMp-Z_DX6M2XUAmpevrx9ep0n7Kw&oe=67D75123') no-repeat center center/cover;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 0px 15px 2px rgba(0, 0, 0, 0.5);
+}
+
+.time-wasting-list .habit {
+    background: rgba(0, 0, 0, 0.6); /* Semi-transparent black */
+    padding: 20px;
+    margin-bottom: 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: transform 0.3s ease-in-out;
+    width: 92%;
+    margin-left: 40px;
+}
+
+.time-wasting-list .habit:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 25px 3px rgba(0, 0, 0, 0.9);
+}
+
+.time-wasting-list .habit .habit-img {
+    width: 300px;
+    height: 180px;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+    margin-left: 20px;
+}
+
+
+.time-wasting-list .habit h3 {
+    font-size: 26px;
+    color: #f39c12;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-left: 40px;
+}
+
+.time-wasting-list .habit p {
+    font-size: 18px;
+    color: #ecf0f1;
+    line-height: 1.5;
+    margin-left: 40px;
+}
+
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 15px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    .nav-links li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .appointment-btn {
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .topbar {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px 20px;
+    }
+
+    .social-icons {
+        justify-content: center;
+        margin-top: 5px;
+    }
+
+    .navbar {
+        padding: 10px 20px;
+    }
+
+    .nav-links {
+
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-links.active {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav-links li {
+        width: 100%;
+    }
+
+    .dropdown {
+        position: static;
+        width: 100%;
+        text-align: center;
+    }
+
+    .appointment-btn {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .topbar {
+        padding: 10px;
+    }
+
+    .navbar {
+        padding: 10px;
+    }
+
+    .logo {
+        font-size: 18px;
+    }
+
+    .logo img {
+        width: 40px;
+    }
+
+    .nav-links a {
+        font-size: 16px;
+    }
+
+    .appointment-btn {
+        font-size: 18px;
+        padding: 10px;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .time-wasting-list .habit {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .time-wasting-list .habit .habit-img {
+        margin-bottom: 20px;
+    }
+}
+
+
+

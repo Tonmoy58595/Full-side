@@ -1,0 +1,282 @@
+body {
+    background-color: #fff;
+    justify-content: center;
+    align-items: center;
+    background-color: #9dd2ec;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+
+/*Top Bar Start*/
+
+
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    background: #dff7eb;
+    padding: 10px 50px;
+    font-size: 14px;
+    color: #555;
+
+}
+.social-icons{
+    color: #555;
+}
+.social-icons a, .contact-info a {
+    margin-right: 10px;
+    color: #555;
+    text-decoration: none;
+}
+.social-icons a:hover, .contact-info a:hover {
+    color: #007bff;
+}
+
+
+/*Top Bar End*/
+
+
+/*Nav Bar Start*/
+
+
+
+.navbar {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 50px;
+    background: white;
+    box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.9);
+}
+.navbar ul ul li{
+    background-color: #7c4444;
+    
+}
+.nav-links li:hover .dropdown {
+    display: contents;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 22px;
+    font-weight: bold;
+}
+.logo span{
+    color: #333;
+}
+.logo img {
+    width: 50px;
+    margin-right: 10px;
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+.nav-links li {
+    position: relative;
+    padding: 10px 20px;
+    background: #dff7eb;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+
+}
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    font-weight: bold;
+}
+.dropdown {
+    display: none;
+    position: absolute;
+    background: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    padding: 5px;
+    min-width: 150px;
+}
+.nav-links li:hover{
+    background: #494949;
+    box-shadow: 0px 0px 15px 2px gray;
+}
+.nav-links li:hover a{
+    color: #fff;
+}
+
+.dropdown li {
+    padding: 5px 0;
+}
+.appointment-btn {
+    background: #dff7eb;
+    color: #494949;
+    padding: 15px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+}
+.appointment-btn:hover{
+    background: #494949;
+    color: #fff;
+    box-shadow: 0px 0px 15px 2px gray;
+}
+
+
+/*Nav Bar End*/
+
+
+
+
+/*Dinajpur start*/
+
+
+.t {
+    background: linear-gradient(135deg, #2c3e50, #4ca1af);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+    margin-top: 30px;
+}
+nav {
+    display: flex;
+    justify-content: center;
+    background: #34495e;
+    padding: 15px;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+nav a:hover {
+    color: #4ca1af;
+}
+.container {
+    width: 80%;
+    margin: 30px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+section {
+    margin-bottom: 40px;
+}
+section h2 {
+    color: #2c3e50;
+    border-left: 5px solid #4ca1af;
+    padding-left: 10px;
+    font-size: 22px;
+}
+section p {
+    line-height: 1.8;
+    color: #555;
+}
+section img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+footer {
+    text-align: center;
+    padding: 15px;
+    background: linear-gradient(135deg, #4ca1af, #2c3e50);
+    color: white;
+    font-size: 14px;
+    margin-top: 30px;
+}
+
+
+
+/*Dinajpur end*/
+
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+    .topbar, .navbar {
+        padding: 10px 30px;
+    }
+
+    .nav-links {
+        gap: 10px;
+    }
+
+    .nav-links a {
+        font-size: 16px;
+    }
+
+    .appointment-btn {
+        font-size: 18px;
+        padding: 10px 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-links li {
+        width: 100%;
+    }
+
+    .appointment-btn {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+    }
+
+    section h2 {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .topbar, .navbar {
+        padding: 10px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+    }
+
+    .container {
+        width: 95%;
+    }
+
+    .t {
+        font-size: 20px;
+        padding: 15px;
+    }
+
+    .appointment-btn {
+        font-size: 16px;
+        padding: 10px 15px;
+    }
+}
