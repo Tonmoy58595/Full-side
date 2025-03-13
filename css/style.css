@@ -143,6 +143,12 @@ body {
 .slide-text {
     max-width: 50%;
 }
+.slide .slide-text a{
+        font-size: 10px;
+        line-height: 8;
+        
+        
+    }
 .slide h1 {
     font-size: 40px;
     color: #333;
