@@ -230,4 +230,13 @@ figure{
     .footer div {
         text-align: center;
     }
+    .a3 img{
+        height: 180px;
+    }
+    .a3 p, .a3 h3{
+        font-size: 10px;
+    }
+    .a3{
+        margin-top: 190px;
+    }
 }
